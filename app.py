@@ -88,7 +88,7 @@ def quotes():
             title = 'Untitled'
             r = '\nno data\n'
             if main:
-                title = soup.find(attrs={"class": "pane-legend-title__container"}).get_text()
+                title = 'Title'
                 d = main['bars']['data']
                 columns = ['time', 'open', 'high', 'low', 'close', 'vol', '%', 'id', 'timestamp']
 
