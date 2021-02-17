@@ -9,7 +9,7 @@ import nest_asyncio
 
 nest_asyncio.apply()
 
-pyppeteer.DEBUG = False
+pyppeteer.DEBUG = True
 headless = True
 # headless = False
 args = [
@@ -19,7 +19,7 @@ args = [
     '--ignore-certificate-errors',
     '--disable-dev-shm-usage',
     '--single-process',
-    '--shm-size=1gb'
+    '--shm-size=6gb'
 ]
 
 loop = asyncio.get_event_loop()
