@@ -18,7 +18,8 @@ args = [
     '--disable-setuid-sandbox',
     '--ignore-certificate-errors',
     '--disable-dev-shm-usage',
-    '--single-process'
+    '--single-process',
+    '--shm-size=1gb'
 ]
 
 loop = asyncio.get_event_loop()
