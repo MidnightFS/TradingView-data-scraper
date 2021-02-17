@@ -38,7 +38,7 @@ async def get_csv(url):
     await page.setViewport(dict(width=1024, height=768))
     await page.setUserAgent(headers['user-agent'])
     await page.goto(url)
-    await page.waitForSelector('.pane-legend-title__container')
+    await page.waitForSelector('.pane-legend-title__container', {visible:true})
     content = await page.content()
     await page.close()
     await browser.close()
